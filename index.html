@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101010">
+    <title>TamilFlix — Find Tamil films and shows</title>
+    <link rel="stylesheet" href="stile.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="TamilFlix home">TAMIL<span>FLIX</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#catalog" class="nav-link">Tamil movies &amp; shows</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="home" aria-labelledby="hero-title">
+          <div class="hero-content">
+            <p class="eyebrow"><span class="eyebrow-mark">T</span> TAMIL ENTERTAINMENT</p>
+            <h1 id="hero-title">Find your next watch</h1>
+            <p class="hero-description">Search Tamil movies, dramas, web series, and serials, then check legal streaming options in India.</p>
+            <button class="button button-light" id="example-search" type="button">Search Jailer</button>
+          </div>
+          <span class="hero-caption">TAMIL MOVIES &amp; SHOWS</span>
+        </section>
+
+        <section class="catalog-section" id="catalog">
+          <div class="section-heading">
+            <div><p class="section-kicker">TAMIL LANGUAGE</p><h2>Search titles</h2></div>
+          </div>
+          <div class="search-controls">
+            <label class="search-field">Title
+              <input id="search-input" type="search" placeholder="Try Jailer" autocomplete="off">
+            </label>
+            <label class="search-field">Type
+              <select id="media-type-select">
+                <option value="movie">Movie</option>
+                <option value="drama">Drama</option>
+                <option value="webseries">Web series</option>
+                <option value="serial">Serial</option>
+              </select>
+            </label>
+          </div>
+          <p class="language-note">This app does not host or copy films. Availability and Tamil audio vary by service; playback happens on the official provider.</p>
+          <div id="search-results" class="search-results" aria-live="polite"></div>
+        </section>
+      </main>
+      <footer><span class="brand footer-brand">TAMIL<span>FLIX</span></span><p>Search links open an independent availability directory. You may need a subscription, rental, or purchase on the provider to watch a title.</p></footer>
+    </div>
+  </body>
+</html>
